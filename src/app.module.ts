@@ -5,6 +5,7 @@ import { AppService } from './app.service.js';
 import { UserController } from './user/user.controller.js';
 import { ProductsController } from './products/products.controller.js';
 import { ProductsService } from './products/products.service.js';
+import { EmployeeModule } from './employee/employee.module.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -17,6 +18,7 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
       appSecret: 'YOUR_APP_SECRET',
       serviceId: 'first_project',
     }),
+    EmployeeModule,
   ],
   controllers: [AppController, UserController, ProductsController],
   providers: [AppService, ProductsService],
