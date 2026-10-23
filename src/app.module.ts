@@ -6,6 +6,7 @@ import { UserController } from './user/user.controller.js';
 import { ProductsController } from './products/products.controller.js';
 import { ProductsService } from './products/products.service.js';
 import { EmployeeModule } from './employee/employee.module.js';
+import { CategoryModule } from './category/category.module.js';
 
 export const { ObserveModule, ObserveInstrument } = createObserveModule();
 
@@ -19,6 +20,7 @@ export const { ObserveModule, ObserveInstrument } = createObserveModule();
       serviceId: 'first_project',
     }),
     EmployeeModule,
+    CategoryModule,
   ],
   controllers: [AppController, UserController, ProductsController],
   providers: [AppService, ProductsService],
